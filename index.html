@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -96,17 +96,50 @@
           УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ
           БРОНИ
         </p>
-        <form action="" method="post">
-          <input type="" />
-          <input type="text" />
-          <input type="text" />
-          <input type="text" />
+        <form action="https://echo.htmlacademy.ru/" method="post">
+          <p>
+            <label for="appointment_date">Дата</label>
+            <input
+              id="appointment_date"
+              type="text"
+              name="date"
+              placeholder="08.10.2017"
+            />
+          </p>
+          <p>
+            <label for="appointment_time">Время</label>
+            <input
+              id="appointment_time"
+              type="text"
+              name="time"
+              placeholder="10:00"
+            />
+          </p>
+          <p>
+            <label for="appointment_name">Ваше имя</label>
+            <input
+              id="appointment_name"
+              type="text"
+              name="user_name"
+              placeholder="Борода"
+            />
+          </p>
+          <p>
+            <label for="appointment_phone">Телефон</label>
+            <input
+              id="appointment_phone"
+              type="tel"
+              name="user_contact"
+              placeholder="+7 123 456-78-90"
+            />
+          </p>
+          <button type="submit">Отправить</button>
         </form>
       </section>
     </main>
     <footer>
       <section>
-        <h2>Adress</h2>
+        <h2>Наш адрес</h2>
         <p>
           БАРБЕРШОП «БОРОДИНСКИЙ» АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ,
           Д. 19/8 КАК НАС НАЙТИ? ТЕЛЕФОН: +7 (812) 666-02-66
@@ -128,7 +161,36 @@
     <section>
       <h2>Личный кабинет</h2>
       <p>Введите пожалуйста свой логин и пароль</p>
-      <form action="" method="post"></form>
+      <form action="https://echo.htmlacademy.ru/" method="post">
+        <p>
+          <label for="login">Введите логин</label>
+          <input
+            id="login"
+            type="email"
+            placeholder="email@example.com"
+            name="user_login"
+            required
+          />
+        </p>
+        <p>
+          <label for="password">Введите пароль</label>
+          <input
+            type="password"
+            placeholder="••••••••"
+            name="user_password"
+            id="password"
+            required
+          />
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" name="remember" />
+            Запомните меня
+          </label>
+        </p>
+        <a href="#">Я забыл пароль!</a>
+        <button type="submit">Войти</button>
+      </form>
       <button type="button">Закрыть</button>
     </section>
     <section>
